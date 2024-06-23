@@ -1,7 +1,7 @@
 .carousel-item img {
     height: 500px;
     /* Задайте желаемую высоту */
-    object-fit: cover;
+    object-fit: scale-down;
     /* Обрезает и центрирует изображение */
     width: 100%;
 }
