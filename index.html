@@ -32,6 +32,7 @@
               class="d-inline-block align-top"
             />
           </a>
+          <p class="text-center mx-auto m-0">Аренда Дніпро</p>
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -82,7 +83,7 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="4000">
+            <div class="carousel-item active" data-bs-interval="8000">
               <div class="thumb">
                 <img src="./img/main.JPG" class="d-block w-100" alt="..." />
               </div>
@@ -117,19 +118,105 @@
             </div>
           </div>
         </div>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary d-block mx-auto"
+          data-bs-toggle="modal"
+          data-bs-target="#buyModal"
+        >
+          Buy now
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="buyModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Замовити дзвінок
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">
+                      Номер телефону
+                    </label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="exampleInputPhone"
+                      aria-describedby="phoneHelp"
+                      placeholder="+380 (0_) ___-__-__"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">
+                      Ім'я
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName"
+                    />
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <section>
+        <div class="container">
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+            dicta cum quisquam reiciendis, hic eius laboriosam aut omnis sequi
+            perferendis, iure quos voluptatibus et explicabo voluptate. Harum
+            corrupti delectus voluptates!
+          </p>
+        </div>
+      </section>
     </main>
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
     >
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 E-Bike</span>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 d-flex flex-column flex-md-row align-items-center"
+          >
+            <span class="mb-2 mb-md-0 text-body-secondary">
+              © 2019-2024 E-Bike
+            </span>
+            <span class="ms-md-3">Ми у Дніпрі</span>
+          </div>
+        </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

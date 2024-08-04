@@ -1,18 +1,49 @@
 .carousel-item img {
     height: 500px;
-    /* Задайте желаемую высоту */
     object-fit: scale-down;
-    /* Обрезает и центрирует изображение */
     width: 100%;
 }
 
 .carousel-caption {
     color: black;
-    /* Цвет текста */
     background-color: rgba(255, 255, 255, 0.8);
-    /* Полупрозрачный черный фон */
     padding: 15px;
-    /* Отступы для лучшего вида */
     border-radius: 10px;
-    /* Закругленные углы */
+}
+
+.nav-link i {
+    font-size: 18px;
+}
+
+@media (max-width: 400px) {
+    .nav-link {
+        padding: 0.25rem;
+    }
+
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-link i {
+        font-size: 14px;
+        /* Измените размер иконок */
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .col-md-4 {
+        justify-content: center;
+    }
+
+    .col-md-4 span {
+        display: block;
+        width: 100%;
+    }
+
+    .ms-md-3 {
+        margin-left: 0 !important;
+    }
 }
